@@ -7,8 +7,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="admin" element={<Admins />} />
-        <Route path="*" element={<Clients />} />
+        {/* this for the client page */}
+        <Route exact path="/services" element={<Clients />} />
+        <Route exact path="/aboutus" element={<Clients />} />
+        <Route exact path="/products" element={<Clients />} />
+        <Route exact path="/contacts" element={<Clients />} />
+        <Route exact path="/feedbacks" element={<Clients />} />
+
+        {/* for the admin dashboard  */}
+        <Route exact path="*" element={<Clients />} />
       </Routes>
     </BrowserRouter>
   );
