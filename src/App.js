@@ -1,5 +1,5 @@
 import "./App.css";
-import Admins from "./admin";
+// import Admins from "./admin";
 import Clients from "./client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
