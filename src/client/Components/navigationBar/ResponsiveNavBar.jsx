@@ -54,9 +54,14 @@ function ResponsiveNavBar(props) {
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
+  
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component="nav" position="sticky" sx={{ background: "#131d33" }}>
+      <AppBar
+        component="nav"
+        position={props.navPosition}
+        sx={{ background: "#131d33" }}
+      >
         <Toolbar
           sx={{
             display: { xs: "block", sm: "flex" },
