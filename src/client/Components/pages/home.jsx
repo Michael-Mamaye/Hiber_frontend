@@ -1,10 +1,9 @@
-import { Box, Toolbar, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 
 const Home = () => {
   return (
-      <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
+      <Box component="main" sx={{ p: 3}}>
         <Typography>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
           unde fugit veniam eius, perspiciatis sunt? Corporis qui ducimus

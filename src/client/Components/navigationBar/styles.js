@@ -10,6 +10,34 @@ export const navLinkStyle = {
     cursor: "pointer",
   },
 };
+export const mobileNavLinkStyle = {
+  textDecoration: "none",
+  color: "#131d33",
+  padding: 2,
+  fontWeight: "bold",
+  paddingLeft: 35,
+  marginTop: 10,
+  textAlign: "left",
+  paddingRight: 15,
+  borderRight: "1px solid rgb(255,255,255,0.1)",
+  "&:hover": {
+    cursor: "pointer",
+  },
+};
+export const mobileActiveNavLinkStyle = {
+  textDecoration: "none",
+  color: "#fa9928",
+  padding: 2,
+  fontWeight: "bold",
+  marginTop:10,
+  paddingLeft: 35,
+  textAlign:'left',
+  paddingRight: 15,
+  borderRight: "1px solid rgb(255,255,255,0.1)",
+  "&:hover": {
+    cursor: "pointer",
+  },
+};
 export const activeNavLinkStyle = {
   textDecoration: "none",
   color: "#fa9928",
@@ -50,7 +78,7 @@ export const miniNavInfoStyle = {
 export const socialMediaIconStyle = {
   width: 30,
   height: 30,
-  '&:hover':{
-    color:'black'
-  }
+  "&:hover": {
+    color: "black",
+  },
 };

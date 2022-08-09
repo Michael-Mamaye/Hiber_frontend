@@ -9,7 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes children={Clients}>
         {/* this for the client page */}
-        <Route exact path="/" element={<Navigate to="/users" replace />} />
+        <Route exact path="/users" element={<Navigate to="/users/home" replace />} />
+        <Route exact path="/" element={<Navigate to="/users/home" replace />} />
         <Route exact path="/users/*" element={<ClientsRoute />} />
 
         {/* for the admin dashboard  */}
