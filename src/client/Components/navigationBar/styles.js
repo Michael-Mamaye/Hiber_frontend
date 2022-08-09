@@ -33,10 +33,24 @@ export const SearchButtonStyle = {
   },
 };
 export const searchTextFieldStyle = {
- 
   borderRadius: 2,
   color: "white",
-  fontWeight:'bold',
-  borderBottom:'3px solid #fa9928',
-  borderLeft:'2px solid #fa9928',
+  fontWeight: "bold",
+  borderBottom: "3px solid #fa9928",
+  borderLeft: "2px solid #fa9928",
+};
+
+export const miniNavInfoStyle = {
+  display: "flex",
+  textAlign: "center",
+  justifyContent: "center",
+  background: "rgb(245,245,245)",
+  padding: 0.5,
+};
+export const socialMediaIconStyle = {
+  width: 30,
+  height: 30,
+  '&:hover':{
+    color:'black'
+  }
 };

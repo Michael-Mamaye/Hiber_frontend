@@ -1,21 +1,19 @@
 import "./App.css";
 // import Admins from "./admin";
 import Clients from "./client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
+import ClientsRoute from "./client";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes children={Clients}>
         {/* this for the client page */}
-        <Route exact path="/services" element={<Clients />} />
-        <Route exact path="/aboutus" element={<Clients />} />
-        <Route exact path="/products" element={<Clients />} />
-        <Route exact path="/contacts" element={<Clients />} />
-        <Route exact path="/feedbacks" element={<Clients />} />
+        <Route exact path="/" element={<Navigate to="/users" replace />} />
+        <Route exact path="/users/*" element={<ClientsRoute />} />
 
         {/* for the admin dashboard  */}
-        <Route exact path="*" element={<Clients />} />
+        <Route exact path="*" element={<></>} />
       </Routes>
     </BrowserRouter>
   );

@@ -74,7 +74,7 @@ function ResponsiveNavBar(props) {
                 style={({ isActive }) =>
                   isActive ? activeNavLinkStyle : navLinkStyle
                 }
-                to="/dashboard"
+                to="/home"
               >
                 Home
               </NavLink>
@@ -82,7 +82,7 @@ function ResponsiveNavBar(props) {
                 style={({ isActive }) =>
                   isActive ? activeNavLinkStyle : navLinkStyle
                 }
-                to="/lop"
+                to="/services"
               >
                 Services
               </NavLink>
@@ -90,7 +90,7 @@ function ResponsiveNavBar(props) {
                 style={({ isActive }) =>
                   isActive ? activeNavLinkStyle : navLinkStyle
                 }
-                to="/dashboard"
+                to="/projects"
               >
                 Projects
               </NavLink>
@@ -98,7 +98,7 @@ function ResponsiveNavBar(props) {
                 style={({ isActive }) =>
                   isActive ? activeNavLinkStyle : navLinkStyle
                 }
-                to="/lop"
+                to="/aboutus"
               >
                 About Us
               </NavLink>
@@ -106,7 +106,7 @@ function ResponsiveNavBar(props) {
                 style={({ isActive }) =>
                   isActive ? activeNavLinkStyle : navLinkStyle
                 }
-                to="/dashboard"
+                to="/news"
               >
                 News
               </NavLink>
@@ -114,7 +114,7 @@ function ResponsiveNavBar(props) {
                 style={({ isActive }) =>
                   isActive ? activeNavLinkStyle : navLinkStyle
                 }
-                to="/lop"
+                to="/contactus"
               >
                 Contact
               </NavLink>

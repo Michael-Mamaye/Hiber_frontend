@@ -3,7 +3,6 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
         <Typography>
@@ -44,7 +43,6 @@ const Home = () => {
           sapiente modi nesciunt.
         </Typography>
       </Box>
-    </div>
   );
 };
 

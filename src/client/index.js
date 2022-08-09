@@ -1,13 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ResponsiveNavBar from "./Components/navigationBar/ResponsiveNavBar";
-import WebNavigation from "./Components/navigationBar/webNavigation";
+import InfoAboveNavBar from "./Components/navigationBar/InfoAboveNavBar";
 import Home from "./Components/pages/home";
 
-const Clients = () => {
+const ClientsRoute = (props) => {
   const [navPosition, setNavPosition] = React.useState("sticky");
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 120) {
+    if (window.scrollY > 150) {
       setNavPosition("fixed");
     } else {
       setNavPosition("sticky");
@@ -15,15 +15,19 @@ const Clients = () => {
   });
   return (
     <>
-      <WebNavigation />
+      <InfoAboveNavBar />
       <ResponsiveNavBar navPosition={navPosition} />
       <Routes>
         <Route exact path="/home" element={<Home />} />
+        <Route exact path="/news" element={<Home />} />
+        <Route exact path="/aboutus" element={<Home />} />
+        <Route exact path="/projects" element={<Home />} />
+        <Route exact path="/contactus" element={<Home />} />
+        <Route exact path="/feedbacks" element={<Home />} />
+        <Route exact path="/services" element={<Home />} />
       </Routes>
-      <div style={{ height: "700px" }}>llkjdsf</div>
-      <div style={{ height: "700px" }}>llkjdsf</div>
     </>
   );
 };
 
-export default Clients;
+export default ClientsRoute;
