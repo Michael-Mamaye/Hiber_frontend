@@ -94,7 +94,7 @@ const InfoAboveNavBar = () => {
             container
             sm={8}
             md={0}
-            sx={{ color: "rgb(0,0,0,0.7)", mt: { sm: 0, md: 2 } }}
+            sx={{ color: "rgb(0,0,0,0.7)", mt: { sm: 0, md: 3 } }}
           >
             <Grid item container xs={4} md={4}>
               <Grid item>
@@ -103,10 +103,10 @@ const InfoAboveNavBar = () => {
                 />
               </Grid>
               <Grid item>
-                <Typography sx={{ fontWeight: "bold" }}>
-                  +251-909090909
+                <Typography sx={{ fontWeight: "bold",fontSize:15 }}>
+                  (+251)-909090909
                 </Typography>
-                <Typography sx={{ opacity: 0.6 }}>info@gmail.com</Typography>
+                <Typography sx={{ opacity: 0.6,fontSize:15 }}>info@gmail.com</Typography>
               </Grid>
             </Grid>
 
@@ -117,10 +117,10 @@ const InfoAboveNavBar = () => {
                 />
               </Grid>
               <Grid item>
-                <Typography sx={{ fontWeight: "bold" }}>
+                <Typography sx={{ fontWeight: "bold",fontSize:15 }}>
                   8:30 AM - 6:00 PM
                 </Typography>
-                <Typography sx={{ opacity: 0.6 }}>Monday-Saturday</Typography>
+                <Typography sx={{ opacity: 0.6,fontSize:15 }}>Monday-Saturday</Typography>
               </Grid>
             </Grid>
             <Grid item container xs={4} md={4}>
@@ -130,8 +130,8 @@ const InfoAboveNavBar = () => {
                 />
               </Grid>
               <Grid item>
-                <Typography sx={{ fontWeight: "bold" }}>Nifas Silk,</Typography>
-                <Typography sx={{ opacity: 0.6 }}>
+                <Typography sx={{ fontWeight: "bold",fontSize:15 }}>Nifas Silk,</Typography>
+                <Typography sx={{ opacity: 0.6,fontSize:15 }}>
                   Addis Ababa, Ethiopia
                 </Typography>
               </Grid>

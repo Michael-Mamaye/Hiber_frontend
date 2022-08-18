@@ -2,12 +2,12 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ResponsiveNavBar from "./Components/navigationBar/ResponsiveNavBar";
 import InfoAboveNavBar from "./Components/navigationBar/InfoAboveNavBar";
-import Home from "./Components/pages/home";
+import Home from "./Components/pages/home/home";
 
 const ClientsRoute = (props) => {
   const [navPosition, setNavPosition] = React.useState("sticky");
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 150) {
+    if (window.scrollY > 149) {
       setNavPosition("fixed");
     } else {
       setNavPosition("sticky");

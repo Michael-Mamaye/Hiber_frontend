@@ -98,8 +98,10 @@ function ResponsiveNavBar(props) {
     <Box sx={{ display: "flex" }}>
       <AppBar
         component="nav"
+        elevation={0}
         position={props.navPosition}
         sx={{ background: "#131d33" }}
+        onTransitionEndCapture
       >
         <Toolbar
           sx={{
@@ -188,6 +190,7 @@ function ResponsiveNavBar(props) {
           {searchOpen && (
             <TextField
               variant="filled"
+              placeholder="Search Text Here"
               InputProps={{
                 disableUnderline: true,
                 endAdornment: (

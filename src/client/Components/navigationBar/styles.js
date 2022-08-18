@@ -3,8 +3,8 @@ export const navLinkStyle = {
   color: "white",
   padding: 2,
   fontWeight: "bold",
-  paddingLeft: 15,
-  paddingRight: 15,
+  paddingLeft: 20,
+  paddingRight: 20,
   borderRight: "1px solid rgb(255,255,255,0.1)",
   "&:hover": {
     cursor: "pointer",
@@ -18,7 +18,7 @@ export const mobileNavLinkStyle = {
   paddingLeft: 35,
   marginTop: 10,
   textAlign: "left",
-  paddingRight: 15,
+  paddingRight: 20,
   borderRight: "1px solid rgb(255,255,255,0.1)",
   "&:hover": {
     cursor: "pointer",
@@ -32,7 +32,7 @@ export const mobileActiveNavLinkStyle = {
   marginTop:10,
   paddingLeft: 35,
   textAlign:'left',
-  paddingRight: 15,
+  paddingRight: 20,
   borderRight: "1px solid rgb(255,255,255,0.1)",
   "&:hover": {
     cursor: "pointer",
@@ -43,8 +43,8 @@ export const activeNavLinkStyle = {
   color: "#fa9928",
   padding: 2,
   fontWeight: "bold",
-  paddingLeft: 15,
-  paddingRight: 15,
+  paddingLeft: 20,
+  paddingRight: 20,
   borderRight: "1px solid rgb(255,255,255,0.1)",
   "&:hover": {
     cursor: "pointer",
