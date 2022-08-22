@@ -5,6 +5,7 @@ import CardGrids from "./CardGrids";
 import CarouselComponent from "./carousel/CarouselComponent";
 import CompanyRealFacts from "./CompanyRealFacts";
 import ExperienceBox from "./ExperienceBox";
+import PartOfProject from "./PartOfProject";
 import RecentProjects from "./RecentProjects";
 import { homeContactUsButtonStyle } from "./style";
 const Home = () => {
@@ -41,6 +42,7 @@ const Home = () => {
       <CompanyRealFacts/>
       <RecentProjects/>
       <BoardOfDirectors/>
+      <PartOfProject/>
     </Box>
   );
 };

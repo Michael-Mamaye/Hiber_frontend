@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import Img1 from "../../../../../assets/consultingPeople.jpg";
+import Img4 from "../../../../../assets/handMessage.jpg";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -17,7 +18,6 @@ const CarouselComponent = () => {
         showThumbs={false}
         stopOnHover
         autoPlay
-        
         animationHandler="slide"
       >
         <div
@@ -67,11 +67,11 @@ const CarouselComponent = () => {
           </Box>
         </div>
         <div>
-          <img src={Img1} alt="carousel item 2"/>
+          <img src={Img4} alt="carousel item 2"/>
           <p className="legend">Legend 2</p>
         </div>
         <div>
-          <img src={Img1} alt="carousel item 3"/>
+          <img src={Img4} alt="carousel item 3"/>
           <p className="legend">Legend 3</p>
         </div>
       </Carousel>

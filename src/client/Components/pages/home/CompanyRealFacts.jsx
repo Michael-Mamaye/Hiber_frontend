@@ -1,16 +1,18 @@
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import Img from "../../../../assets/handShake.jpg";
+import Img from "../../../../assets/teamTogether.jpg";
 const CompanyRealFacts = () => {
   return (
     <Box
       sx={{
         background: `linear-gradient(rgba(19, 29, 51,0.9),rgba(19, 29, 51,0.9)),url(${Img})`,
         backgroundSize: "cover",
-        backgroundPosition:'fixed',
+        backgroundPosition:'center',
         backgroundRepeat:'no-repeat',
         p: 10,
+        pt:17,
+        pb:17,
       }}
     >
       <Grid
