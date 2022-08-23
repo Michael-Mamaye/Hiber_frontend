@@ -29,8 +29,8 @@ const PartOfProject = () => {
 
       <div
         style={{
-          maxWidth: "70%",
-          marginLeft: "14%",
+          maxWidth: "75%",
+          marginLeft: "13%",
           backgroundColor: "white",
           marginTop: -200,
           boxShadow:

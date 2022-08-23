@@ -48,3 +48,17 @@ export const findLocationButtonStyle = {
     color: "white",
   },
 };
+export const footerTypography = {
+  color: "rgb(255,255,255,0.4)",
+  pt: 3,
+};
+export const footerLinks = {
+  color: "rgb(255,255,255,0.4)",
+  paddingTop: 10,
+  textDecoration: "none",
+  "&:hover": {
+    textDecoration: "none",
+    color: "#fa9928",
+    background:'white'
+  },
+};

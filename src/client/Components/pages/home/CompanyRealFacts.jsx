@@ -32,19 +32,19 @@ const CompanyRealFacts = () => {
         </Grid>
         <Grid item xs={12} sm={2.5}>
           <Typography fontSize={20} fontWeight="bold">
-            20+
+            5+
           </Typography>
           <Typography>Years of business</Typography>
         </Grid>
         <Grid item xs={12} sm={2.5}>
           <Typography fontSize={20} fontWeight="bold">
-            521
+            8+
           </Typography>
-          <Typography>Our staffs worldwide</Typography>
+          <Typography>Experienced Professionals</Typography>
         </Grid>
         <Grid item xs={12} sm={2.5}>
           <Typography fontSize={20} fontWeight="bold">
-            5000+
+            10+
           </Typography>
           <Typography>Finance help done</Typography>
         </Grid>
