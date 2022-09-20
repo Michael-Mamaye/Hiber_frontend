@@ -6,8 +6,9 @@ import Home from "./Components/pages/home/home";
 import Footer from "./Components/footer/Footer";
 import About from "./Components/pages/about/About";
 import Projects from "./Components/pages/projects/Projects";
-import { Feedback } from "@mui/icons-material";
 import Services from "./Components/pages/services/Services";
+import Contact from "./Components/pages/contact/Contact";
+import News from "./Components/pages/news/News";
 
 const ClientsRoute = (props) => {
   const [navPosition, setNavPosition] = React.useState("sticky");
@@ -24,11 +25,10 @@ const ClientsRoute = (props) => {
       <ResponsiveNavBar navPosition={navPosition} />
       <Routes>
         <Route exact path="/home" element={<Home />} />
-        <Route exact path="/news" element={<Home />} />
+        <Route exact path="/news" element={<News />} />
         <Route exact path="/aboutus" element={<About />} />
         <Route exact path="/projects" element={<Projects />} />
-        <Route exact path="/contactus" element={<Home />} />
-        <Route exact path="/feedbacks" element={<Feedback />} />
+        <Route exact path="/contactus" element={<Contact />} />
         <Route exact path="/services" element={<Services />} />
       </Routes>
       <Footer />

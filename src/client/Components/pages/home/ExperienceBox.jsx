@@ -6,7 +6,7 @@ import { viewServicesButtonStyle } from "./style";
 
 const ExperienceBox = () => {
   return (
-    <Box sx={{ backgroundColor: "#f8f8f8", padding: 4 }}>
+    <Box sx={{ background:'rgb(19, 29, 51,0.1)', padding: 4 }}>
       <Grid container spacing={4} pt={4} pb={10}>
         <Grid item xs={12} md={4}>
           <Typography

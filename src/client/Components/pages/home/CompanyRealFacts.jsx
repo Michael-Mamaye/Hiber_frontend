@@ -32,7 +32,7 @@ const CompanyRealFacts = () => {
         </Grid>
         <Grid item xs={12} sm={2.5}>
           <Typography fontSize={20} fontWeight="bold">
-            5+
+            3+
           </Typography>
           <Typography>Years of business</Typography>
         </Grid>

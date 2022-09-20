@@ -37,10 +37,14 @@ const PartOfProject = () => {
             "2px 0 5px -4px rgba(31, 73, 125, 0.8), -2px 0 5px -4px rgba(31, 73, 125, 0.8)",
         }}
       >
-        <Grid container spacing={2} sx={{ padding: 5 }}>
+        <Grid container spacing={2} sx={{ p: { xs: 2, sm: 5 } }}>
           <Grid item xs={12} sm={6} sx={gridStyles}>
-            <h3>Request a Free Consultation</h3>
-            <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
+            <Typography variant="h5">Request a Free Consultation</Typography>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ mb: 3, mt: 2 }}
+            >
               We’re always interested in new projects, big or small. Send us an
               email and we’ll get in touch shortly, or phone between 8:00 am and
               7:00 pm Monday to Saturday.
@@ -70,7 +74,7 @@ const PartOfProject = () => {
               ...gridStyles,
               borderLeft: { xs: "none", md: "1px solid rgba(0,0,0,0.2)" },
               borderTop: { xs: "1px solid rgba(0,0,0,0.1)", md: "none" },
-              p:3,
+              p: 3,
             }}
           >
             <Typography color="text.secondary" mb={1}>
@@ -92,7 +96,7 @@ const PartOfProject = () => {
                 color: "white",
                 mt: 5,
                 p: 1.5,
-                fontWeight:'bold',
+                fontWeight: "bold",
                 maxWidth: 200,
                 "&:hover": {
                   backgroundColor: "#ba6807",

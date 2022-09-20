@@ -30,10 +30,7 @@ export const closeButtonStyle = {
   position: "absolute",
   top: 10,
   right: 10,
-  "&:hover": {
-    color: "red",
-    background: "red",
-  },
+  color: "red !important",
 };
 
 export const findLocationButtonStyle = {
@@ -59,6 +56,6 @@ export const footerLinks = {
   "&:hover": {
     textDecoration: "none",
     color: "#fa9928",
-    background:'white'
+    background: "white",
   },
 };

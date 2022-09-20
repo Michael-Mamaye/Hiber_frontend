@@ -66,7 +66,7 @@ const Footer = () => {
               </IconButton>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={4}  mt={3}>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Typography variant="h5">Useful Links</Typography>
               <Grid container pt={1}>
@@ -99,14 +99,15 @@ const Footer = () => {
               </Grid>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={4} mt={3}>
             <Typography variant="h5">Our Newsletter</Typography>
             <Typography sx={footerTypography}>
               Sign up for our mailing list to get latest updates and offers.
             </Typography>
-            <Box>
+            <Box sx={{display:'flex',flexDirection:'row'}}>
               <Input
                 disableUnderline
+                placeholder="Email"
                 sx={{
                   background: "rgb(240,240,240,0.1)",
                   borderRadius: 2,

@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   Card,
   CardActions,
@@ -9,10 +8,16 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import React, { useState, useEffect } from "react";
+import { Box } from "@mui/system";
+import React, { useEffect, useState } from "react";
 import Img from "../../../../assets/meetingPicture.jpg";
-const Services = () => {
+import NewsDetail from "./NewsDetail";
+const News = () => {
   const [marginTop, setmarginTop] = useState(0);
+  const [readMore, setReadMore] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 149);
+  }, []);
   window.addEventListener("scroll", () => {
     if (window.scrollY > 149) {
       setmarginTop(8);
@@ -20,9 +25,10 @@ const Services = () => {
       setmarginTop(0);
     }
   });
-  useEffect(() => {
-    window.scrollTo(0, 150);
-  }, []);
+
+  const handleReadMore = () => {
+    setReadMore(!readMore);
+  };
   return (
     <Box
       sx={{
@@ -32,6 +38,23 @@ const Services = () => {
         mb: 10,
       }}
     >
+      <NewsDetail readMore={readMore} handleClose={handleReadMore} />
+      <Box
+        sx={{
+          background: "rgb(19, 29, 51,0.1)",
+          textAlign: "center",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "25vh",
+        }}
+      >
+        <Typography
+          sx={{ fontSize: 50, fontWeight: "bold", color: "rgba(0,0,0,0.8)" }}
+        >
+          Latest News
+        </Typography>
+      </Box>
       <Box sx={{ p: 5 }}>
         <Grid container spacing={5}>
           <Grid item xs={12} md={6} lg={4}>
@@ -75,7 +98,9 @@ const Services = () => {
                 </Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: "end" }}>
-                <Button sx={{ color: "#fa9928" }}>Read More</Button>
+                <Button sx={{ color: "#fa9928" }} onClick={handleReadMore}>
+                  Read More
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -120,7 +145,9 @@ const Services = () => {
                 </Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: "end" }}>
-                <Button sx={{ color: "#fa9928" }}>Read More</Button>
+                <Button sx={{ color: "#fa9928" }} onClick={handleReadMore}>
+                  Read More
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -165,7 +192,9 @@ const Services = () => {
                 </Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: "end" }}>
-                <Button sx={{ color: "#fa9928" }}>Read More</Button>
+                <Button sx={{ color: "#fa9928" }} onClick={handleReadMore}>
+                  Read More
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -210,7 +239,9 @@ const Services = () => {
                 </Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: "end" }}>
-                <Button sx={{ color: "#fa9928" }}>Read More</Button>
+                <Button sx={{ color: "#fa9928" }} onClick={handleReadMore}>
+                  Read More
+                </Button>
               </CardActions>
             </Card>
           </Grid>
@@ -220,4 +251,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default News;
