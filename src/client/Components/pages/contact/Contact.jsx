@@ -1,8 +1,14 @@
-import { Email, Facebook, Groups, Phone, PhoneAndroid, PhoneMissed, PinDrop, Telegram } from "@mui/icons-material";
+import {
+  Email,
+  Facebook,
+  Groups,
+  PhoneAndroid,
+  PinDrop,
+  Telegram,
+} from "@mui/icons-material";
 import { Box, Button, Grid, Input, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { Navigate } from "react-router-dom";
 import Img from "../../../../assets/contact_us.svg";
 import {
   gridStyles,
@@ -84,9 +90,7 @@ const Contact = () => {
               }}
             >
               <PinDrop style={{ color: "#131d33", height: 60, width: 60 }} />
-              <Typography sx={{ fontWeight: "bold" }}>
-                Our Location
-              </Typography>
+              <Typography sx={{ fontWeight: "bold" }}>Our Location</Typography>
               <Typography color="text.secondary">
                 Nifas-silk Lafto Sub-City, Woreda 12
               </Typography>
@@ -103,7 +107,9 @@ const Contact = () => {
                 textAlign: "center",
               }}
             >
-              <PhoneAndroid style={{ color: "#131d33", height: 60, width: 60 }} />
+              <PhoneAndroid
+                style={{ color: "#131d33", height: 60, width: 60 }}
+              />
               <Typography sx={{ fontWeight: "bold" }}>Call Us</Typography>
               <Typography color="text.secondary">+251 - 913077287</Typography>
               <Typography color="text.secondary">+251 - 910898910</Typography>
@@ -171,19 +177,17 @@ const Contact = () => {
               }}
             >
               <Email style={{ color: "#131d33", height: 60, width: 60 }} />
-              <Typography sx={{ fontWeight: "bold" }}>
-                Gmail
-              </Typography>
+              <Typography sx={{ fontWeight: "bold" }}>Gmail</Typography>
               <Typography>
                 {" "}
                 <a href="/" style={socialMediaLinkStyle}>
-                 hiberconsultancy@gmail.com
+                  hiberconsultancy@gmail.com
                 </a>
                 <a href="/" style={socialMediaLinkStyle}>
-                 hiberconsultancy@gmail.com
+                  hiberconsultancy@gmail.com
                 </a>
                 <a href="/" style={socialMediaLinkStyle}>
-                 hiberconsultancy@gmail.com
+                  hiberconsultancy@gmail.com
                 </a>
               </Typography>
             </div>

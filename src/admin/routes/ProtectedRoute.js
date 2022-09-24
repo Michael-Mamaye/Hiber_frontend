@@ -1,8 +1,5 @@
-import { Route } from "react-router-dom";
+import Layout from "../layout/Layout";
 
-
-const ProtectedRoute = (props) => {
-  return <Route />;
+export const ProtectedRoute = ({ component: Component }) => {
+  return <Layout children={<Component />} />;
 };
-
-export default ProtectedRoute;

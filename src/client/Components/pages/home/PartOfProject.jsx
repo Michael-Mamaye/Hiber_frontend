@@ -57,13 +57,13 @@ const PartOfProject = () => {
               Find Location
             </Button>
             <Typography color="text.secondary" mb={2}>
-              Address : 44 New Design Street, Melbourne 005, Australia 300
+              Address : Nifas-silk Lafto Sub-City, Addis Ababa, Ethiopia
             </Typography>
             <Typography color="text.secondary" mb={2}>
-              Phone : 01 (800) 433 544
+              Phone : +251 - 913077287
             </Typography>
             <Typography color="text.secondary" mb={2}>
-              Email : info@victorthemes.com
+              Email : hiberconsultancy@gmail.com
             </Typography>
           </Grid>
           <Grid

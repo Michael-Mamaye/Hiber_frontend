@@ -3,6 +3,7 @@ import "./App.css";
 import Clients from "./client";
 import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
 import ClientsRoute from "./client";
+import Admins from "./admin";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route exact path="/users/*" element={<ClientsRoute />} />
 
         {/* for the admin dashboard  */}
-        <Route exact path="*" element={<></>} />
+        <Route exact path="*" element={<Admins/>} />
       </Routes>
     </BrowserRouter>
   );
