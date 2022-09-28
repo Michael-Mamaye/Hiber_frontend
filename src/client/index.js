@@ -9,6 +9,7 @@ import Projects from "./Components/pages/projects/Projects";
 import Services from "./Components/pages/services/Services";
 import Contact from "./Components/pages/contact/Contact";
 import News from "./Components/pages/news/News";
+import PageNotFound from "../PageNotFound/PageNotFound";
 
 const ClientsRoute = (props) => {
   const [navPosition, setNavPosition] = React.useState("sticky");
@@ -30,6 +31,7 @@ const ClientsRoute = (props) => {
         <Route exact path="/projects" element={<Projects />} />
         <Route exact path="/contactus" element={<Contact />} />
         <Route exact path="/services" element={<Services />} />
+        <Route exact path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </>
