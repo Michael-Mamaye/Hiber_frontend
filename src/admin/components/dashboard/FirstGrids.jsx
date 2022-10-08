@@ -25,9 +25,9 @@ const FirstGrids = () => {
   return (
     <Grid
       container
-      sx={{ display: "flex", flexDirection: "row", justifyContent: "center" }}
+      sx={{ display: "flex", flexDirection: "row", justifyContent: "start" }}
     >
-      <Grid item xs={4} md={2.7} sx={{ ...gridStyles }}>
+      <Grid item xs={5.5} md={2.76} sx={{ ...gridStyles }}>
         <Box sx={gridFirstBoxStyles}>
           <Facebook sx={{ height: 50, width: 50 }} />
         </Box>
@@ -38,7 +38,7 @@ const FirstGrids = () => {
           <Typography color="text.secondary">users</Typography>
         </Box>
       </Grid>
-      <Grid item xs={4} md={2.7} sx={{ ...gridStyles }}>
+      <Grid item xs={5.5} md={2.76} sx={{ ...gridStyles }}>
         <Box sx={gridFirstBoxStyles}>
           <Facebook sx={{ height: 50, width: 50 }} />
         </Box>
@@ -49,7 +49,7 @@ const FirstGrids = () => {
           <Typography color="text.secondary">Emails</Typography>
         </Box>
       </Grid>
-      <Grid item xs={4} md={2.7} sx={{ ...gridStyles }}>
+      <Grid item xs={5.5} md={2.76} sx={{ ...gridStyles }}>
         <Box sx={gridFirstBoxStyles}>
           <Facebook sx={{ height: 50, width: 50 }} />
         </Box>
@@ -60,7 +60,7 @@ const FirstGrids = () => {
           <Typography color="text.secondary">Services</Typography>
         </Box>
       </Grid>
-      <Grid item xs={4} md={2.7} sx={{ ...gridStyles }}>
+      <Grid item xs={5.5} md={2.76} sx={{ ...gridStyles }}>
         <Box sx={gridFirstBoxStyles}>
           <Facebook sx={{ height: 50, width: 50 }} />
         </Box>

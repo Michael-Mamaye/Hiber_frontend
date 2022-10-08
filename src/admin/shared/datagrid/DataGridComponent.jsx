@@ -11,11 +11,27 @@ const CustomizedCheckbox = (props) => {
         color: "#fa9928",
         "&.Mui-checked": {
           color: "#fa9928",
+          outline: "none",
         },
       }}
     />
   );
 };
+const datagridStyle = {
+  background: "white",
+  outline: "none",
+  p: 2,
+  "& .MuiDataGrid-columnHeader:focus-within, & .MuiDataGrid-cell:focus-within":
+    {
+      outline: "none",
+    },
+
+  "& .MuiDataGrid-columnHeader:focus, & .MuiDataGrid-cell:focus": {
+    outline: "none",
+  },
+};
+
+// #F1EEE9   #73777B  #fa9928, #131d33
 
 const DataGridComponent = () => {
   const columns = [
@@ -59,7 +75,7 @@ const DataGridComponent = () => {
   ];
   return (
     <DataGrid
-      sx={{ background: "white", outline: "none", p: 2 }}
+      sx={{ ...datagridStyle }}
       components={{
         Toolbar: CustomToolbar,
         BaseCheckbox: CustomizedCheckbox,

@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import React from "react";
 import {
   LineChart,
@@ -13,6 +13,9 @@ import {
   PieChart,
   Pie,
 } from "recharts";
+import Barchart from "./charts/Barchart";
+import LastSixMonth from "./charts/LastSixMonth";
+import Piechart from "./charts/Piechart";
 import FirstGrids from "./FirstGrids";
 const data = [
   {
@@ -67,31 +70,20 @@ const Dashboard = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        overflowX: "hidden",
       }}
     >
       <FirstGrids />
-      <LineChart
-        width={600}
-        height={300}
-        data={data}
-        margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
-      >
-        <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-      </LineChart>
+      <Grid container spacing={1.5} rowGap={2} columnGap={2} m={1}>
+        <Grid item xs={11} md={7.5}>
+          <Barchart />
+        </Grid>
+        <Grid item xs={11} md={3.75}>
+          <Piechart />
+        </Grid>
+      </Grid>
 
-      <BarChart width={730} height={250} data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="pv" fill="#8884d8" />
-        <Bar dataKey="uv" fill="#82ca9d" />
-      </BarChart>
+      <LastSixMonth />
     </Box>
   );
 };
