@@ -152,7 +152,7 @@ const LastSixMonth = () => {
               <Line type="monotone" dataKey="service" stroke="#131d33" />
               <Line type="monotone" dataKey="user" stroke="rgb(250, 153, 40)" />
               <Line type="monotone" dataKey="project" stroke="#CBE6EF" />
-              <Line type="monotone" dataKey="emails" stroke="#B7CFDC" />
+              <Line type="monotone" dataKey="emails" stroke="#439cde" />
             </LineChart>
           </ResponsiveContainer>
         </Grid>
