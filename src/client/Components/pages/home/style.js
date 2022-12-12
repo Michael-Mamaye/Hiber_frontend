@@ -14,7 +14,7 @@ export const homeMainContactUsButtonStyle = {
 	pl: 2,
 	pr: 2,
 	border: "1px solid rgb(19, 29, 51)",
-	background: "rgb(19, 29, 51)",
+	background: { xs: "rgb(19, 29, 51)", md: "none" },
 	color: { xs: "white", md: "rgb(19, 29, 51)" },
 	"&:hover": {
 		border: "1px solid rgb(19, 19, 51)",
