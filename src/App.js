@@ -5,33 +5,42 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ClientsRoute from "./client";
 import Admins from "./admin";
 import PageNotFound from "./PageNotFound/PageNotFound";
+import { QueryClientProvider, QueryClient } from "react-query";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes children={Clients}>
-        {/* this for the client page */}
-        <Route
-          exact
-          path="/users"
-          element={<Navigate to="/users/home" replace />}
-        />
-        <Route exact path="/" element={<Navigate to="/users/home" replace />} />
-        <Route exact path="/users/*" element={<ClientsRoute />} />
+  const queryClient = new QueryClient();
 
-        {/* for the admin dashboard  */}
-        <Route exact path="/admin/*" element={<Admins />} />
+	return (
+		<QueryClientProvider client={queryClient}>
+			<BrowserRouter>
+				<Routes children={Clients}>
+					{/* this for the client page */}
+					<Route
+						exact
+						path="/users"
+						element={<Navigate to="/users/home" replace />}
+					/>
+					<Route
+						exact
+						path="/"
+						element={<Navigate to="/users/home" replace />}
+					/>
+					<Route exact path="/users/*" element={<ClientsRoute />} />
 
-        {/* for pages that do not found */}
-        <Route
-          exact
-          path="/admin"
-          element={<Navigate to="/admin/dashboard" replace />}
-        />
-        <Route exact path="*" element={<PageNotFound />} />
-      </Routes>
-    </BrowserRouter>
-  );
+					{/* for the admin dashboard  */}
+					<Route exact path="/admin/*" element={<Admins />} />
+
+					{/* for pages that do not found */}
+					<Route
+						exact
+						path="/admin"
+						element={<Navigate to="/admin/dashboard" replace />}
+					/>
+					<Route exact path="*" element={<PageNotFound />} />
+				</Routes>
+			</BrowserRouter>
+		</QueryClientProvider>
+	);
 }
 
 export default App;

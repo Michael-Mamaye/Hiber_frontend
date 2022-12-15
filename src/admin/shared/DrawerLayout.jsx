@@ -1,19 +1,20 @@
 import { Close } from "@mui/icons-material";
 import { Drawer, IconButton, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-const DrawerLayout = ({
-	title,
-	showAddDrawer,
-	handleClose,
-	component,
-}) => {
+const DrawerLayout = ({ title, showAddDrawer, handleClose, component }) => {
 	return (
 		<Drawer
 			anchor="right"
 			title={title}
 			open={showAddDrawer}
 			onClose={handleClose}>
-			<Box sx={{ p: 1, minWidth: { lg: "600px", md: "500px", xs: "450px" } }}>
+			<Box
+				sx={{
+					p: 1,
+					background: "rgb(19, 29, 51,0.1)",
+					height: "100%",
+					minWidth: { lg: "600px", md: "500px", xs: "450px" },
+				}}>
 				<Box
 					sx={{
 						display: "flex",
