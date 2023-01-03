@@ -13,7 +13,7 @@ const AddServices = ({ showAddServiceDrawer, setShowAddServiceDrawer }) => {
 	return (
 		<DrawerLayout
 			title="Add Service"
-			showAddDrawer={showAddServiceDrawer}
+			showDrawer={showAddServiceDrawer}
 			handleClose={handleClose}
 			component={
 				<Box sx={{ display: "flex", flexDirection: "column", marginTop: 3 }}>

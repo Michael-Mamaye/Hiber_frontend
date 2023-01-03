@@ -12,12 +12,12 @@ const AddProjects = ({ showAddProjectDrawer, setShowAddProjectDrawer }) => {
 	};
 	return (
 		<DrawerLayout
-			title="Add Service"
-			showAddDrawer={showAddProjectDrawer}
+			title="Add Project"
+			showDrawer={showAddProjectDrawer}
 			handleClose={handleClose}
 			component={
 				<Box sx={{ display: "flex", flexDirection: "column", marginTop: 3 }}>
-					<TextField placeholder="Service Name" sx={{ ...inputFieldStyles }} />
+					<TextField placeholder="Project Name" sx={{ ...inputFieldStyles }} />
 
 					<TextField
 						id="outlined-multiline-flexible"
@@ -27,7 +27,7 @@ const AddProjects = ({ showAddProjectDrawer, setShowAddProjectDrawer }) => {
 						maxRows={4}
 						sx={{ ...inputFieldStyles }}
 					/>
-					<Button variant="outlined">Add Service</Button>
+					<Button variant="outlined">Add Project</Button>
 				</Box>
 			}
 		/>

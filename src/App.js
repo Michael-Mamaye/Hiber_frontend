@@ -6,9 +6,10 @@ import ClientsRoute from "./client";
 import Admins from "./admin";
 import PageNotFound from "./PageNotFound/PageNotFound";
 import { QueryClientProvider, QueryClient } from "react-query";
+import LoginPage from "./loginPage/LoginPage";
 
 function App() {
-  const queryClient = new QueryClient();
+	const queryClient = new QueryClient();
 
 	return (
 		<QueryClientProvider client={queryClient}>
@@ -36,6 +37,7 @@ function App() {
 						path="/admin"
 						element={<Navigate to="/admin/dashboard" replace />}
 					/>
+					<Route exact path="/login" element={<LoginPage />} />
 					<Route exact path="*" element={<PageNotFound />} />
 				</Routes>
 			</BrowserRouter>
